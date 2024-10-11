@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Client Web</title>
-    <!-- Inserire qui il codice per caricare i css di w3.css! --> 
-            
-  </head>
-  <body>
-    <!-- Inserire qui il codice per definire il form -->
-         
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Client Web</title>
+  <!-- Inserire qui il codice per caricare i css di w3.css! -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <!-- Inserire qui il codice per definire il form! -->
+  <div class="w3-card-4">
+    <div class="w3-container w3-blue">
+      <h2>RISOLA - Registrazione evento</h2>
+    </div>
+    <form class="w3-container">
+      <label>Nome</label>
+      <input class="w3-input w3-border" type="text" name="name">
+     
+      <label>Cognome</label>
+      <input class="w3-input w3-border" type="text" name="surname">
+     
+      <label>Età</label>
+      <input class="w3-input" type="number" name="age">
+D
+      <label>Data evento</label>
+      <input class="w3-input" type="date" name="eventdate">
+    
+      <label>Password</label>
+      <input class="w3-input w3-border" type="password" name="passwd">
+    
+      <form class="w3-container w3-card-4">
+        <h2>Ordinazione</h2>
+        <p>
+        <input class="w3-check" type="checkbox" name="ordine1" value="latte" checked="checked">
+        <label>Latte</label></p>
+        <p>
+        <input class="w3-check" type="checkbox" name="ordine2" value="zucchero" >
+        <label>Zucchero</label></p>
+        <p>
+        <input class="w3-check" type="checkbox" name="ordine3" value="limone" disabled >
+        <label>Limone</label></p>
+      </form>
+
+
+      <form class="w3-container w3-card-4">
+      <h2>Curva</h2>
+        <input class="w3-radio" type="radio" value="nord"></input>
+        <label>Nord</label></p>
+        <p>
+        <input class="w3-radio" type="radio" value="sud"></input>
+        <label>Sud</label></p>
+        <p>
+        <input class="w3-radio" type="radio" value="est"></input>
+        <label>Est</label></p>
+        <p>
+        <input class="w3-radio" type="radio" value="ovest"></input>
+        <label>Ovest</label></p>
+        </form>
+
+        
+      <label>Taglia</label>
+      <select name="taglia" class="w3-select w3-border">
+        <option disabled selected>Selezionare taglia</option>
+        <option value="M">M</option>
+        <option value="S">S</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+
+    </form>
+  </div>
+</body>
+
 </html>
